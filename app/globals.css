@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 250 31% 43%; /* #574b90 */
+
+    /* Primary - Pink */
+    --primary: 338 95% 76%; /* #fc85ae */
+    --primary-foreground: 0 0% 100%; /* #ffffff */
+
+    /* Secondary - Purple */
+    --secondary: 302 28% 48%; /* #9e579d */
+    --secondary-foreground: 0 0% 100%; /* #ffffff */
+
+    /* Accent - Deep Purple */
+    --accent: 250 31% 43%; /* #574b90 */
+    --accent-foreground: 0 0% 100%; /* #ffffff */
+
+    /* Other UI elements */
+    --card: 0 0% 100%;
+    --card-foreground: 250 31% 43%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 250 31% 43%;
+    --muted: 250 31% 95%;
+    --muted-foreground: 250 31% 43%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 31% 90%;
+    --input: 250 31% 90%;
+    --ring: 338 95% 76%;
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: hsl(338, 95%, 76%), hsl(302, 28%, 48%),
+      hsl(250, 31%, 43%);
+    --gradient-secondary: hsl(0, 0%, 100%), hsl(250, 31%, 43%);
+  }
+
+  .dark {
+    --background: 250 31% 13%; /* Darker version of #574b90 */
+    --foreground: 0 0% 100%;
+    --card: 250 31% 13%;
+    --card-foreground: 0 0% 100%;
+    --popover: 250 31% 13%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 338 95% 76%; /* #fc85ae */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 302 28% 48%; /* #9e579d */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 250 31% 20%;
+    --muted-foreground: 250 31% 80%;
+    --accent: 250 31% 43%; /* #574b90 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 31% 30%;
+    --input: 250 31% 30%;
+    --ring: 338 95% 76%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply size-full scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground size-full overflow-hidden;
+  }
+  .text-gradient-primary {
+    @apply bg-gradient-primary text-transparent bg-clip-text;
+  }
+  .text-gradient-secondary {
+    @apply bg-gradient-secondary text-transparent bg-clip-text;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
