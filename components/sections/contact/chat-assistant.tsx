@@ -68,7 +68,7 @@ export default function ChatAssistant() {
     {
       role: "assistant",
       content:
-        "Hi! I'm Arun's AI assistant. I can help you learn more about his expertise in Next.js, React, AI integration, and full-stack development. What would you like to know?",
+        "Hi! I'm Arun's AI assistant. Ask me about the AI agent systems, pipelines and full-stack apps Arun has built — CreativeOS, KittyKat, TripKnot and more. What would you like to know?",
       timestamp: new Date(),
     },
   ]);
@@ -204,7 +204,7 @@ export default function ChatAssistant() {
         {
           role: "assistant",
           content:
-            "Hi! I'm Arun's AI assistant. I can help you learn more about his expertise in Next.js, React, AI integration, and full-stack development. What would you like to know?",
+            "Hi! I'm Arun's AI assistant. Ask me about the AI agent systems, pipelines and full-stack apps Arun has built — CreativeOS, KittyKat, TripKnot and more. What would you like to know?",
           timestamp: new Date(),
         },
       ]);

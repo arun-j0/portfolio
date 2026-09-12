@@ -11,26 +11,27 @@ const firaCode = Fira_Code({
   variable: "--font-fira-code",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arunkumar.dev";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arunkumar.portfolio.com"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Arun Kumar | Software Engineer | Full Stack Developer",
+    default: "Arun Kumar | AI Software Engineer",
     template: "%s | Arun Kumar",
   },
   description:
-    "Full Stack Product Engineer specializing in Next.js, React, and AI Integration. Expert in building high-performance web applications with modern technologies.",
+    "AI Software Engineer building agent systems and production AI pipelines with Next.js, Supabase, FastAPI and LangGraph.",
   keywords: [
+    "AI Software Engineer",
+    "AI Agents",
+    "LangGraph",
+    "LangChain",
     "Next.js Developer",
-    "React Developer",
-    "AI Integration",
+    "Supabase",
+    "FastAPI",
+    "React Native",
     "Full Stack Developer",
-    "Web Development",
-    "JavaScript",
     "TypeScript",
-    "Frontend Developer",
-    "Software Engineer",
-    "Web Applications",
-    "Performance Optimization",
     "Arun Kumar",
   ],
   authors: [{ name: "Arun Kumar" }],
@@ -38,17 +39,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://agakadela.com",
+    url: siteUrl,
     siteName: "Arun Kumar Portfolio",
-    title: "Arun Kumar | Full Stack Product Engineer",
+    title: "Arun Kumar | AI Software Engineer",
     description:
-      "Full Stack Product Engineer specializing in Next.js, React, and AI Integration. Building high-performance web applications.",
+      "AI Software Engineer building agent systems and production AI pipelines with Next.js, Supabase, FastAPI and LangGraph.",
     images: [
       {
         url: "/imgs/website.webp",
         width: 1200,
         height: 630,
-        alt: "Arun Kumar - Full Stack Product Engineer",
+        alt: "Arun Kumar - AI Software Engineer",
       },
     ],
   },
