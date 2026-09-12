@@ -1,22 +1,24 @@
 export const experience = {
   jobs: [
     {
-      company: "Yuvabe ",
-      role: "Software Engineer",
+      company: "Yuvabe",
+      role: "AI Software Engineer",
       period: "Aug 2024 - Present",
       description:
-        "Building AI-integrated applications using Next.js, FastAPI and MongoDB. Implementing LLM integrations with OpenAI. Developing and deploying scalable solutions using Google Cloud Platform and Docker.",
+        "Build and ship AI products end-to-end. Designed CreativeOS, an agentic content pipeline (Script → Brand KB → Shots → Image → Video → Approval) with a node-based canvas UI, an async 3-phase Knowledge Base builder on Supabase Realtime, and Trigger.dev background jobs for image/video generation. Architected KittyKat, a multi-agent content platform on LangGraph/LangChain with a FastAPI orchestration backend and containerized microservices (ONNX/CLIP embeddings, thumbnailing, watermarking). Built Yuvabe ATS, an HR automation platform with resume parsing, AI match scoring and interview workflows on Supabase.",
       technologies: [
         "Next.js",
         "TypeScript",
+        "Supabase",
         "FastAPI",
-        "MongoDB",
+        "LangGraph",
+        "LangChain",
         "OpenAI",
-        "LLM Integration",
-        "Google Cloud",
+        "Google GenAI",
+        "MongoDB",
+        "Trigger.dev",
+        "GCP",
         "Docker",
-        "Tanstack",
-        "Tailwind CSS",
       ],
       link: "https://www.yuvabestudios.com",
     },
