@@ -8,21 +8,21 @@ const defaultProps = {
 };
 
 const codeSnippet = `// Welcome to my Portfolio! 🚀
-import { FullStackDeveloper } from 'arun-kumar';
-import { NextJS, React, AIIntegration } from '@/skills';
+import { AISoftwareEngineer } from 'arun-kumar';
+import { NextJS, FastAPI, LangGraph } from '@/skills';
 
-function createIntelligentWebApp() {
+function buildIntelligentSystems() {
   const mySkills = {
-    frontend: ["Next.js", "React", "TailwindCSS"],
-    backend: ["FastAPI", "Node.js", "MongoDB"],
-    aiCapabilities: ["LLM Integration", "AI Agents"],
-    cloud: ["GCP", "Firebase", "Supabase"],
-    passion: "Building intelligent applications"
+    frontend: ["Next.js", "React Native", "TypeScript"],
+    backend: ["FastAPI", "Supabase", "MongoDB"],
+    ai: ["LangGraph", "LangChain", "OpenAI", "Gemini"],
+    cloud: ["GCP", "Vercel", "Trigger.dev"],
+    passion: "Shipping AI agents that do real work"
   };
 
   return {
     message: "Let's collaborate on your next project!",
-    services: ["Modern Web Apps", "AI Solutions", "Data Visualization"],
+    services: ["AI Agent Systems", "Full-Stack Apps", "Mobile Apps"],
     contact: "Scroll down to connect with me →"
   };
 };`;

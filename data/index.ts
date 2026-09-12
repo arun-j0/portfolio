@@ -9,7 +9,7 @@ const data = {
   home: {
     name: "Arun Kumar",
     description:
-      "I Build & Optimize #Next_js & #React Apps - Creating #AI Powered Solutions", // # -> for css style, _ -> create space, __ -> creates dash
+      "I Build #AI_Agents & #Full__Stack Apps with #Next_js, #Supabase & #FastAPI", // # -> for css style, _ -> create space, __ -> creates dash
     cvLink: "#contact",
   },
   sidebar: {
