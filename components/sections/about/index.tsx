@@ -57,62 +57,52 @@ export default function AboutSection() {
             className="text-muted-foreground"
           >
             <strong>
-              I&apos;m Arun Kumar — I develop modern, performant applications
-              with a focus on AI integration.
+              I&apos;m Arun Kumar — an AI Software Engineer who builds agent
+              systems and production AI pipelines end-to-end.
             </strong>
             <br />
-            <br />I build comprehensive full-stack solutions with{" "}
-            <strong>
-              Next.js, React, TypeScript, TanStack Query, Tailwind CSS
-            </strong>
-            , and integrate AI capabilities using the latest tools and
-            frameworks. <br />
             <br />
-            My expertise spans both frontend and backend development —{" "}
-            <strong>
-              creating intuitive UIs, optimizing performance, implementing AI
-              features, and building scalable backend architectures
-            </strong>{" "}
-            that deliver real business value. <br />
+            At Yuvabe I design and ship AI products from the canvas UI down to
+            the background job runner: node-based content pipelines, multi-agent
+            platforms, and HR automation — all backed by{" "}
+            <strong>Next.js, Supabase, FastAPI, LangGraph</strong> and a
+            multi-provider LLM layer. <br />
             <br />
-            I take pride in creating clean, maintainable code that stands the
-            test of time.
-            <br />
+            On the side I&apos;ve shipped a travel app to both app stores and
+            rebuilt a manufacturing ERP that cut manual ops work by 60%. <br />
             <br />
             <span className="font-semibold">📌 What I Do Best:</span>
-            <br />✅ <strong>Modern React applications</strong> – Building
-            performant, responsive applications with Next.js, React, and
-            TypeScript.
-            <br />✅ <strong>UI/UX excellence</strong> – Creating intuitive
-            interfaces with Tailwind CSS and various UI libraries like shadcn,
-            Radix UI, and Material UI.
-            <br />✅ <strong>Backend development</strong> – FastAPI, Flask,
-            MongoDB, Supabase, and Firebase for scalable backend solutions.
-            <br />✅ <strong>AI integration</strong> – Implementing LLMs, AI
-            agents, and intelligent features that provide real value.
-            <br />✅ <strong>DevOps & deployment</strong> – GCP, GitHub Actions,
-            Docker for seamless deployment and CI/CD pipelines.
+            <br />✅ <strong>AI agents & pipelines</strong> – LangGraph /
+            LangChain multi-agent orchestration, async job systems (Trigger.dev,
+            Supabase Realtime), and multi-provider LLM integration (OpenAI,
+            Gemini, Groq).
+            <br />✅ <strong>Full-stack Next.js</strong> – TypeScript, App
+            Router, TanStack Query, Tailwind CSS and shadcn/ui.
+            <br />✅ <strong>Mobile</strong> – React Native / Expo apps shipped
+            to the App Store and Google Play.
+            <br />✅ <strong>Backend</strong> – FastAPI, Supabase (Postgres,
+            Auth, Storage, Edge Functions), MongoDB, and containerized
+            microservices.
+            <br />✅ <strong>Cloud & DevOps</strong> – GCP Cloud Run, Vercel,
+            Docker and GitHub Actions for CI/CD.
             <br />
             <br />
             <span className="font-semibold">📌 Why Work With Me?</span>
             <br />
-            🔹 I combine deep technical expertise with a focus on business
-            outcomes. Your application should not just work well, but deliver
-            measurable value.
+            🔹 I own the whole stack — UI, API, agents, infra — so nothing gets
+            lost between teams.
             <br />
-            🔹 I stay at the cutting edge of technology, particularly in AI
-            integration, ensuring your solutions leverage the latest
-            advancements.
+            🔹 I build for production: realtime status, retries, audit trails
+            and error handling are part of the design, not an afterthought.
             <br />
-            🔹 I build with scalability and maintainability in mind, creating
-            solutions that can grow with your business and adapt to changing
-            requirements.
+            🔹 I keep up with the AI tooling landscape and pick what actually
+            ships, not what&apos;s trending.
             <br />
             <br />
             <span className="font-semibold">📌 Let&apos;s Connect</span>
             <br />
-            If you're looking for a developer who can bring your ideas to life
-            with modern tech and AI capabilities, I'd love to chat.
+            If you need someone who can take an AI product from idea to
+            deployed, I&apos;d love to chat.
             <br />
             <a href="#contact" className="text-primary hover:underline">
               ✅ Get in Touch
