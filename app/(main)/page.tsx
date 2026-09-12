@@ -1,3 +1,5 @@
+"use client";
+
 import LoadingScreen from "@/components/loading-screen";
 import HomeSection from "@/components/sections/home";
 import dynamic from "next/dynamic";

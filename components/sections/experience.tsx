@@ -8,7 +8,7 @@ import experience from "@/data/experience";
 import { Badge } from "../ui/badge";
 
 export default function ExperienceSection() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   useCurSection(ref, 0.2);
 
   return (

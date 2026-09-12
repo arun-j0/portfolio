@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
 
 // You'll need to update these image imports with your own project images
 import project1 from "@/public/projects-imgs/proj1.png";
@@ -17,12 +17,12 @@ const data = {
       {
         name: "github",
         link: "https://github.com/arun-j0",
-        icon: Github,
+        icon: GithubIcon,
       },
       {
         name: "linkedin",
         link: "https://www.linkedin.com/in/arunakj",
-        icon: Linkedin,
+        icon: LinkedinIcon,
       },
     ],
   },

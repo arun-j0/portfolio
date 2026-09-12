@@ -27,13 +27,14 @@ function buildIntelligentSystems() {
   };
 };`;
 
+const lines = codeSnippet.split("\n");
+
 export default function CodeTyping() {
   const [displayedLines, setDisplayedLines] = useState<string[]>(
-    Array(codeSnippet.split("\n").length).fill("")
+    Array(lines.length).fill("")
   );
   const [currentLine, setCurrentLine] = useState(0);
   const [cursorPosition, setCursorPosition] = useState(0);
-  const lines = codeSnippet.split("\n");
 
   useEffect(() => {
     if (currentLine >= lines.length) return;

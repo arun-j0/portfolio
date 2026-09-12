@@ -28,7 +28,7 @@ Message: ${message}
     });
 
     return NextResponse.json(emailData);
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to send email" },
       { status: 500 }

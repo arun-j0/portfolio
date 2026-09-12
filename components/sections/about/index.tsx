@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import profileImage from "@/public/imgs/arun.png"; // Update with your image path
 
 export default function AboutSection() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   useCurSection(ref, 0.1);
   return (
     <div
