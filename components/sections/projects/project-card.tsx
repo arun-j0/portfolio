@@ -50,7 +50,7 @@ export default function ProjectCard({ project }: props) {
       </div>
       <div className="px-4 py-2 w-full">
         <h2 className="text-xl capitalize font-bold my-3">{project.title}</h2>
-        <p className="text-muted-foreground text-sm h-[150px] overflow-hidden whitespace-pre-line">
+        <p className="text-muted-foreground text-sm min-h-[150px] whitespace-pre-line">
           {project.description}
         </p>
         <div className="space-x-2 my-7">
