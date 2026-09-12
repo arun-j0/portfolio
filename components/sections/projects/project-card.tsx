@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Globe } from "lucide-react";
+import { ExternalLink, Globe, Play, Smartphone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
@@ -13,6 +13,8 @@ type props = {
     image: StaticImageData;
     githubLink?: string;
     previewLink: string;
+    appStoreLink?: string;
+    playStoreLink?: string;
   };
 };
 
@@ -53,16 +55,27 @@ export default function ProjectCard({ project }: props) {
         <p className="text-muted-foreground text-sm min-h-[150px] whitespace-pre-line">
           {project.description}
         </p>
-        <div className="space-x-2 my-7">
-          {/* <Button asChild variant='secondary'>
-            <Link href={project.previewLink} target='_blank'>
-              Live view
-            </Link>
-          </Button> */}
+        <div className="flex flex-wrap gap-2 my-7">
           {project.githubLink && (
             <Button asChild variant="ghost" className="bg-muted-foreground/10">
               <Link href={project.githubLink} target="_blank">
                 Git Hub
+              </Link>
+            </Button>
+          )}
+          {project.appStoreLink && (
+            <Button asChild variant="ghost" className="bg-muted-foreground/10">
+              <Link href={project.appStoreLink} target="_blank">
+                <Smartphone size={16} className="mr-2" />
+                App Store
+              </Link>
+            </Button>
+          )}
+          {project.playStoreLink && (
+            <Button asChild variant="ghost" className="bg-muted-foreground/10">
+              <Link href={project.playStoreLink} target="_blank">
+                <Play size={16} className="mr-2" />
+                Play Store
               </Link>
             </Button>
           )}

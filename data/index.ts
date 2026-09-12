@@ -55,11 +55,14 @@ const data = {
       },
       {
         id: 4,
-        title: "TripKnot: Travel Planning & Group Trip Platform",
+        title: "TripKnot: AI Travel Planning & Group Trips",
         description:
-          "Solo full-stack build of a multi-platform travel app: React Native/Expo mobile app, Next.js admin and business portals, and an async FastAPI backend powering 25+ API modules. Implemented geospatial nearby-search and map clustering across 200+ destinations, AI-generated itineraries, group trip coordination with Aadhaar KYC, and real-time push notifications.\n\nTechnologies Used: React Native, Expo, Next.js, FastAPI, MongoDB (Beanie), Firebase, GCP Cloud Run, Vercel, Sentry, OpenAI, Groq.",
+          "Travel smarter. Experience more. Live on the App Store and Google Play. Solo full-stack build: React Native/Expo app, Next.js admin and business portals, and an async FastAPI backend powering 25+ API modules. AI-generated day-by-day itineraries, curated trip packages, geospatial nearby-search and map clustering across 200+ destinations, \"Strangers Trip\" group matching with Aadhaar KYC, and real-time push notifications.\n\nTechnologies Used: React Native, Expo, Next.js, FastAPI, MongoDB (Beanie), Firebase, GCP Cloud Run, Vercel, Sentry, OpenAI, Groq.",
         image: project1,
-        previewLink: "#",
+        previewLink: "https://www.tripknot.in",
+        appStoreLink: "https://apps.apple.com/in/app/tripknot/id6781707127",
+        playStoreLink:
+          "https://play.google.com/store/apps/details?id=com.tripknot.app",
       },
       {
         id: 5,
