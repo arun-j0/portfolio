@@ -1,14 +1,21 @@
 import { useInView } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { RefObject, useEffect } from "react";
+import { setCurrentHash } from "./use-hash";
 
-export default function useCurSection(curSectionRef: RefObject<Element>, amount: number | "all" | "some" = "all") {
+export default function useCurSection(
+  curSectionRef: RefObject<Element | null>,
+  amount: number | "all" | "some" = "all"
+) {
   const isInView = useInView(curSectionRef, { amount });
   const router = useRouter();
   useEffect(() => {
     const timeout = setTimeout(() => {
       const sectionId = curSectionRef.current?.id;
-      if (isInView && sectionId) router.push(`#${sectionId}`, { scroll: false });
+      if (isInView && sectionId) {
+        setCurrentHash(sectionId);
+        router.push(`#${sectionId}`, { scroll: false });
+      }
     }, 400);
 
     return () => clearTimeout(timeout);

@@ -8,7 +8,7 @@ import experience from "@/data/experience";
 import { Badge } from "../ui/badge";
 
 export default function ExperienceSection() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   useCurSection(ref, 0.2);
 
   return (
@@ -29,7 +29,7 @@ export default function ExperienceSection() {
 
         {experience.jobs.map((job, index) => (
           <motion.div
-            key={job.company}
+            key={`${job.company}-${job.role}`}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}

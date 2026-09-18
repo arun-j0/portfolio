@@ -1,16 +1,17 @@
-import { Github, Linkedin } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
 
 // You'll need to update these image imports with your own project images
 import project1 from "@/public/projects-imgs/proj1.png";
 import project2 from "@/public/projects-imgs/proj2.png";
 import project3 from "@/public/projects-imgs/proj3.png";
-import project4 from "@/public/projects-imgs/retrocech.webp";
+import tripknotImg from "@/public/projects-imgs/tripknot.webp";
+import project5 from "@/public/projects-imgs/proj5.png";
 
 const data = {
   home: {
     name: "Arun Kumar",
     description:
-      "I Build & Optimize #Next_js & #React Apps - Creating #AI Powered Solutions", // # -> for css style, _ -> create space, __ -> creates dash
+      "I Build #AI_Agents & #Full__Stack Apps with #Next_js, #Supabase & #FastAPI", // # -> for css style, _ -> create space, __ -> creates dash
     cvLink: "#contact",
   },
   sidebar: {
@@ -18,12 +19,12 @@ const data = {
       {
         name: "github",
         link: "https://github.com/arun-j0",
-        icon: Github,
+        icon: GithubIcon,
       },
       {
         name: "linkedin",
         link: "https://www.linkedin.com/in/arunakj",
-        icon: Linkedin,
+        icon: LinkedinIcon,
       },
     ],
   },
@@ -32,27 +33,45 @@ const data = {
     projects: [
       {
         id: 1,
-        title: "Chat2Data: Conversational Database Assistant",
+        title: "CreativeOS: AI-Driven Content Creation Pipeline",
         description:
-          "Built an AI-powered interface to interact with databases like MongoDB and Supabase using natural language. The system translates user queries into database operations and returns clean, readable responses.\n\nTechnologies Used: Next.js, React.js, Tailwind CSS, Hugging Face (Qwen), smolagents.",
-
+          "Built an end-to-end AI content pipeline (Script → Brand KB → Shots → Image → Video → Approval) with a node-based canvas UI. Designed a 3-phase async Knowledge Base build system (research, parallelized extraction, finalize) with Supabase Realtime for live status and webhook-based error handling, using Trigger.dev as the background job runner for image/video generation.\n\nTechnologies Used: Next.js, Supabase (Postgres, Auth, Storage, Realtime, Edge Functions), Trigger.dev, Vercel.",
         image: project1,
         previewLink: "#",
       },
       {
         id: 2,
-        title: "VisionQuery: Multimodal Image Search",
+        title: "TripKnot: AI Travel Planning & Group Trips",
         description:
-          "Built a multimodal search engine that allows users to find visually similar images using either text input or an image upload. Leverages CLIP embeddings to enable cross-modal retrieval and stores vector representations in Pinecone for fast and scalable similarity search.\n\nTechnologies Used: React.js, FastAPI, CLIP (Huggingface), Pinecone, Tailwind CSS.",
+          "Travel smarter. Experience more. Live on the App Store and Google Play. Solo full-stack build: React Native/Expo app, Next.js admin and business portals, and an async FastAPI backend powering 25+ API modules. AI-generated day-by-day itineraries, curated trip packages, geospatial nearby-search and map clustering across 200+ destinations, \"Strangers Trip\" group matching with Aadhaar KYC, and real-time push notifications.\n\nTechnologies Used: React Native, Expo, Next.js, FastAPI, MongoDB (Beanie), Firebase, GCP Cloud Run, Vercel, Sentry, OpenAI, Groq.",
+        image: tripknotImg,
+        previewLink: "https://www.tripknot.in",
+        appStoreLink: "https://apps.apple.com/in/app/tripknot/id6781707127",
+        playStoreLink:
+          "https://play.google.com/store/apps/details?id=com.tripknot.app",
+      },
+      {
+        id: 3,
+        title: "KittyKat: Multi-Agent Content & Asset Platform",
+        description:
+          "Architected an agent-first platform: Next.js frontend with CopilotKit agent UI, FastAPI backend for orchestration, and LangGraph/LangChain agent runtimes. Built containerized microservices for image/text embedding (ONNX/CLIP), thumbnailing, watermarking and brand-info extraction, with multi-provider GenAI and vector search.\n\nTechnologies Used: Next.js, FastAPI, LangGraph, LangChain, OpenAI, Google GenAI, ONNX, MongoDB, GCS, Firebase.",
         image: project2,
         previewLink: "#",
       },
       {
-        id: 3,
-        title: "FormForge: Multistep Form Code Generator",
+        id: 4,
+        title: "Yuvabe ATS: Applicant Tracking System",
         description:
-          "Built a dynamic multistep form builder that generates copy-paste-ready React code using shadcn/ui components and React Hook Form. Users can visually design form steps, set field validation, and instantly preview or export the final code.\n\nTechnologies Used: Next.js, shadcn/ui, React Hook Form, Tailwind CSS, TypeScript.",
+          "Built an HR automation platform covering the full candidate lifecycle: resume ingestion and parsing, AI-powered match scoring, shortlisting, and interview scheduling with automatic status transitions. Designed a paginated, filterable Supabase data layer with per-status counts and efficient queries that stay responsive on large candidate pools.\n\nTechnologies Used: Next.js 16, TypeScript, Supabase, OpenAI, Resend, pdf-lib, mammoth, TanStack Query, Zod.",
         image: project3,
+        previewLink: "#",
+      },
+      {
+        id: 5,
+        title: "Auromix: Manufacturing Production & Payroll ERP",
+        description:
+          "Rebuilt a legacy Firebase system into a Next.js + MongoDB ERP for garment manufacturing, cutting manual ops work by 60%. Designed a piece-rate payroll engine with batch payments and bank letter generation, a 3-tier RBAC system, a multi-step order approval state machine, and centralized audit logging with before/after diffs on every mutation.\n\nTechnologies Used: Next.js 16, TypeScript, MongoDB (Mongoose), NextAuth, TanStack Query, Recharts.",
+        image: project5,
         previewLink: "#",
       },
     ],
@@ -109,80 +128,116 @@ const data = {
       },
       {
         id: 9,
+        name: "expo",
+        src: "/skills/expo.svg",
+        link: "https://expo.dev/",
+      },
+      {
+        id: 10,
         name: "tanstack",
         src: "/skills/tanstack.png",
         link: "https://tanstack.com/",
       },
       {
-        id: 10,
+        id: 11,
         name: "zustand",
         src: "/skills/zustand.svg",
         link: "https://github.com/pmndrs/zustand",
       },
       {
-        id: 11,
+        id: 12,
         name: "shadcn",
         src: "/skills/shadcn.png",
         link: "https://ui.shadcn.com/",
       },
       {
-        id: 12,
+        id: 13,
+        name: "python",
+        src: "/skills/python.svg",
+        link: "https://www.python.org/",
+      },
+      {
+        id: 14,
         name: "fastapi",
         src: "/skills/fastapi.svg",
         link: "https://fastapi.tiangolo.com/",
       },
       {
-        id: 13,
-        name: "flask",
-        src: "/skills/flask.svg",
-        link: "https://flask.palletsprojects.com/",
+        id: 15,
+        name: "langchain",
+        src: "/skills/langchain.svg",
+        link: "https://www.langchain.com/",
       },
       {
-        id: 14,
+        id: 16,
+        name: "langgraph",
+        src: "/skills/langgraph.svg",
+        link: "https://www.langchain.com/langgraph",
+      },
+      {
+        id: 17,
+        name: "openai",
+        src: "/skills/openai.svg",
+        link: "https://openai.com/",
+      },
+      {
+        id: 18,
+        name: "postgresql",
+        src: "/skills/postgresql.svg",
+        link: "https://www.postgresql.org/",
+      },
+      {
+        id: 19,
         name: "mongoDB",
         src: "/skills/mongoDB.svg",
         link: "https://en.wikipedia.org/wiki/MongoDB",
       },
       {
-        id: 15,
+        id: 20,
         name: "supabase",
         src: "/skills/supabase.svg",
         link: "https://supabase.com/",
       },
       {
-        id: 16,
+        id: 21,
         name: "firebase",
         src: "/skills/firebase.svg",
         link: "https://en.wikipedia.org/wiki/Firebase",
       },
       {
-        id: 17,
+        id: 22,
         name: "gcp",
         src: "/skills/google-cloud.svg",
         link: "https://cloud.google.com/",
       },
       {
-        id: 18,
+        id: 23,
+        name: "vercel",
+        src: "/skills/vercel.svg",
+        link: "https://vercel.com/",
+      },
+      {
+        id: 24,
         name: "docker",
         src: "/skills/docker.svg",
         link: "https://en.wikipedia.org/wiki/Docker_(software)",
       },
       {
-        id: 19,
+        id: 25,
         name: "githubActions",
         src: "/skills/githubActions.svg",
         link: "https://github.com/features/actions",
       },
       {
-        id: 20,
-        name: "openai",
-        src: "/skills/openai.svg",
-        link: "https://openai.com/",
+        id: 26,
+        name: "sentry",
+        src: "/skills/sentry.svg",
+        link: "https://sentry.io/",
       },
     ],
   },
   contact: {
-    email: "arun2310kumar2002.com", // Remember to update with your actual email
+    email: "arun2310kumar2002@gmail.com",
     name: "Arun Kumar",
   },
 };

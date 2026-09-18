@@ -9,7 +9,7 @@ import Image from 'next/image';
 import logo from '@/public/imgs/logo.webp';
 
 export default function ContactSection() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   useCurSection(ref, 0.5);
   return (
     <div

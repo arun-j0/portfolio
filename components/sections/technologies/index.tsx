@@ -7,7 +7,7 @@ import useCurSection from "@/hooks/use-cur-section";
 import data from "@/data";
 
 export default function Technologies() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   useCurSection(ref);
   return (
     <div ref={ref} className="flex gap-4 items-center flex-col justify-center bg-muted w-full py-12 my-12 overflow-hidden">

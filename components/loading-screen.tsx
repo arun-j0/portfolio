@@ -1,13 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
+
+// false during SSR/hydration, true once React is running on the client.
+const subscribe = () => () => {};
+const useIsMounted = () =>
+  useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false
+  );
 
 export default function LoadingScreen() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    if (!isMounted) setIsMounted(true);
-  }, [isMounted]);
+  const isMounted = useIsMounted();
 
   if (isMounted) return null;
 

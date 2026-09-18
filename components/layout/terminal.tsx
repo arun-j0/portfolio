@@ -123,15 +123,15 @@ export default function Terminal() {
         onClick={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
       >
-        {terminalLines.map((line) => {
+        {terminalLines.map((line, lineIndex) => {
           const lineArr = line.split('✓');
           return (
-            <li key={Math.random()}>
-              {lineArr.map((value) =>
+            <li key={lineIndex}>
+              {lineArr.map((value, partIndex) =>
                 !value ? (
                   <span
                     className='text-green-500 font-extrabold'
-                    key={Math.random()}
+                    key={partIndex}
                   >
                     ✓
                   </span>

@@ -68,7 +68,7 @@ export default function ChatAssistant() {
     {
       role: "assistant",
       content:
-        "Hi! I'm Arun's AI assistant. I can help you learn more about his expertise in Next.js, React, AI integration, and full-stack development. What would you like to know?",
+        "Hi! I'm Arun's AI assistant. Ask me about the AI agent systems, pipelines and full-stack apps Arun has built — CreativeOS, KittyKat, TripKnot and more. What would you like to know?",
       timestamp: new Date(),
     },
   ]);
@@ -140,9 +140,8 @@ export default function ChatAssistant() {
     return debounce(apiCall, 750)();
   }, []);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim()) return;
+  const sendMessage = (text: string) => {
+    if (!text.trim()) return;
     if (isTyping) return;
 
     if (remainingMessages <= 0) {
@@ -173,7 +172,7 @@ export default function ChatAssistant() {
 
     const userMessage: Message = {
       role: "user",
-      content: input.trim(),
+      content: text.trim(),
       timestamp: new Date(),
     };
 
@@ -192,10 +191,14 @@ export default function ChatAssistant() {
     debouncedApiCall(chatMessages);
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    sendMessage(input);
+  };
+
   const handleQuickOptionClick = (option: QuickOption) => {
     if (isTyping || remainingMessages <= 0) return;
-    setInput(option.message);
-    handleSubmit(new Event("submit") as any);
+    sendMessage(option.message);
   };
 
   const handleClearClick = () => {
@@ -204,7 +207,7 @@ export default function ChatAssistant() {
         {
           role: "assistant",
           content:
-            "Hi! I'm Arun's AI assistant. I can help you learn more about his expertise in Next.js, React, AI integration, and full-stack development. What would you like to know?",
+            "Hi! I'm Arun's AI assistant. Ask me about the AI agent systems, pipelines and full-stack apps Arun has built — CreativeOS, KittyKat, TripKnot and more. What would you like to know?",
           timestamp: new Date(),
         },
       ]);
@@ -279,6 +282,7 @@ export default function ChatAssistant() {
                 msg.role === "assistant" ? "bg-secondary/15" : "bg-primary/50"
               }`}
             >
+              <div className="prose prose-sm dark:prose-invert max-w-none prose-p:leading-normal prose-pre:bg-background/50 prose-pre:p-2">
               <ReactMarkdown
                 components={{
                   p: ({ children }) => (
@@ -310,10 +314,10 @@ export default function ChatAssistant() {
                     </code>
                   ),
                 }}
-                className="prose prose-sm dark:prose-invert max-w-none prose-p:leading-normal prose-pre:bg-background/50 prose-pre:p-2"
               >
                 {msg.content}
               </ReactMarkdown>
+              </div>
 
               {i === 0 && messages.length === 1 && (
                 <motion.div

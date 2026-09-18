@@ -14,7 +14,7 @@ import useCurSection from '@/hooks/use-cur-section';
 
 export default function HomeSection() {
   const router = useRouter();
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   useCurSection(ref, 0.1);
 
   return (
