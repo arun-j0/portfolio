@@ -41,22 +41,6 @@ const data = {
       },
       {
         id: 2,
-        title: "KittyKat: Multi-Agent Content & Asset Platform",
-        description:
-          "Architected an agent-first platform: Next.js frontend with CopilotKit agent UI, FastAPI backend for orchestration, and LangGraph/LangChain agent runtimes. Built containerized microservices for image/text embedding (ONNX/CLIP), thumbnailing, watermarking and brand-info extraction, with multi-provider GenAI and vector search.\n\nTechnologies Used: Next.js, FastAPI, LangGraph, LangChain, OpenAI, Google GenAI, ONNX, MongoDB, GCS, Firebase.",
-        image: project2,
-        previewLink: "#",
-      },
-      {
-        id: 3,
-        title: "Yuvabe ATS: Applicant Tracking System",
-        description:
-          "Built an HR automation platform covering the full candidate lifecycle: resume ingestion and parsing, AI-powered match scoring, shortlisting, and interview scheduling with automatic status transitions. Designed a paginated, filterable Supabase data layer with per-status counts and efficient queries that stay responsive on large candidate pools.\n\nTechnologies Used: Next.js 16, TypeScript, Supabase, OpenAI, Resend, pdf-lib, mammoth, TanStack Query, Zod.",
-        image: project3,
-        previewLink: "#",
-      },
-      {
-        id: 4,
         title: "TripKnot: AI Travel Planning & Group Trips",
         description:
           "Travel smarter. Experience more. Live on the App Store and Google Play. Solo full-stack build: React Native/Expo app, Next.js admin and business portals, and an async FastAPI backend powering 25+ API modules. AI-generated day-by-day itineraries, curated trip packages, geospatial nearby-search and map clustering across 200+ destinations, \"Strangers Trip\" group matching with Aadhaar KYC, and real-time push notifications.\n\nTechnologies Used: React Native, Expo, Next.js, FastAPI, MongoDB (Beanie), Firebase, GCP Cloud Run, Vercel, Sentry, OpenAI, Groq.",
@@ -65,6 +49,22 @@ const data = {
         appStoreLink: "https://apps.apple.com/in/app/tripknot/id6781707127",
         playStoreLink:
           "https://play.google.com/store/apps/details?id=com.tripknot.app",
+      },
+      {
+        id: 3,
+        title: "KittyKat: Multi-Agent Content & Asset Platform",
+        description:
+          "Architected an agent-first platform: Next.js frontend with CopilotKit agent UI, FastAPI backend for orchestration, and LangGraph/LangChain agent runtimes. Built containerized microservices for image/text embedding (ONNX/CLIP), thumbnailing, watermarking and brand-info extraction, with multi-provider GenAI and vector search.\n\nTechnologies Used: Next.js, FastAPI, LangGraph, LangChain, OpenAI, Google GenAI, ONNX, MongoDB, GCS, Firebase.",
+        image: project2,
+        previewLink: "#",
+      },
+      {
+        id: 4,
+        title: "Yuvabe ATS: Applicant Tracking System",
+        description:
+          "Built an HR automation platform covering the full candidate lifecycle: resume ingestion and parsing, AI-powered match scoring, shortlisting, and interview scheduling with automatic status transitions. Designed a paginated, filterable Supabase data layer with per-status counts and efficient queries that stay responsive on large candidate pools.\n\nTechnologies Used: Next.js 16, TypeScript, Supabase, OpenAI, Resend, pdf-lib, mammoth, TanStack Query, Zod.",
+        image: project3,
+        previewLink: "#",
       },
       {
         id: 5,
