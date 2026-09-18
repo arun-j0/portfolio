@@ -4,6 +4,8 @@ import { GithubIcon, LinkedinIcon } from "@/components/icons/brand";
 import project1 from "@/public/projects-imgs/proj1.png";
 import project2 from "@/public/projects-imgs/proj2.png";
 import project3 from "@/public/projects-imgs/proj3.png";
+import tripknotImg from "@/public/projects-imgs/tripknot.webp";
+import project5 from "@/public/projects-imgs/proj5.png";
 
 const data = {
   home: {
@@ -58,7 +60,7 @@ const data = {
         title: "TripKnot: AI Travel Planning & Group Trips",
         description:
           "Travel smarter. Experience more. Live on the App Store and Google Play. Solo full-stack build: React Native/Expo app, Next.js admin and business portals, and an async FastAPI backend powering 25+ API modules. AI-generated day-by-day itineraries, curated trip packages, geospatial nearby-search and map clustering across 200+ destinations, \"Strangers Trip\" group matching with Aadhaar KYC, and real-time push notifications.\n\nTechnologies Used: React Native, Expo, Next.js, FastAPI, MongoDB (Beanie), Firebase, GCP Cloud Run, Vercel, Sentry, OpenAI, Groq.",
-        image: project1,
+        image: tripknotImg,
         previewLink: "https://www.tripknot.in",
         appStoreLink: "https://apps.apple.com/in/app/tripknot/id6781707127",
         playStoreLink:
@@ -69,7 +71,7 @@ const data = {
         title: "Auromix: Manufacturing Production & Payroll ERP",
         description:
           "Rebuilt a legacy Firebase system into a Next.js + MongoDB ERP for garment manufacturing, cutting manual ops work by 60%. Designed a piece-rate payroll engine with batch payments and bank letter generation, a 3-tier RBAC system, a multi-step order approval state machine, and centralized audit logging with before/after diffs on every mutation.\n\nTechnologies Used: Next.js 16, TypeScript, MongoDB (Mongoose), NextAuth, TanStack Query, Recharts.",
-        image: project2,
+        image: project5,
         previewLink: "#",
       },
     ],
