@@ -23,13 +23,13 @@ export const experience = {
       link: "https://www.yuvabestudios.com",
     },
     {
-      company: "Yuvabe",
-      role: "Software Engineering Intern",
-      period: "Jun 2024 - Jul 2024",
+      company: "Maati16",
+      role: "Web Developer",
+      period: "May 2024 - Jul 2024",
       description:
-        "Worked on AI-powered web application development. Gained hands-on experience with modern full stack technologies and cloud deployment.",
-      technologies: ["Next.js", "React", "FastAPI", "MongoDB"],
-      link: "https://www.yuvabestudios.com",
+        "Designed and built the website for Maati16, an NGO, to showcase its work, programmes and impact to donors, volunteers and the community. Delivered a responsive, content-driven site with clear calls to action for getting involved.",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      link: "",
     },
   ],
 };
